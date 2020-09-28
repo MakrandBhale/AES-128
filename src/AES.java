@@ -385,7 +385,7 @@ public class AES {
     }
     private String stringToHex(String string){
         int MAX_STRING_SIZE = 16;
-        string = string + "x".repeat(MAX_STRING_SIZE - string.length());
+        string = string + " ".repeat(MAX_STRING_SIZE - string.length());
         StringBuilder sb = new StringBuilder();
         for(char c : string.toCharArray()){
             sb.append(Integer.toHexString(c));
