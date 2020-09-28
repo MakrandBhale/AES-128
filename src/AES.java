@@ -18,10 +18,8 @@ public class AES {
         log("Encrypting message");
         log("Message HEX: " + this.hexPlainText);
         log("Key HEX: " + this.hexKey);
-        //String[][] messageMatrix = createMatrix("3243f6a8885a308d313198a2e0370734");
-        //String[][] keyMatrix = createMatrix("2b7e151628aed2a6abf7158809cf4f3c");
-        /* generating keys for all 11 rounds; i.e. 1st initial round and 10 repeated Rounds */
 
+        /* generating keys for all 11 rounds; i.e. 1st initial round and 10 repeated Rounds */
         String[][] keySchedule = generateIntermediateKeys(keyMatrix);
         /* initial round 1 */
         int round = 1;
